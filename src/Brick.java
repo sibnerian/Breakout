@@ -11,7 +11,7 @@ public class Brick extends GameObject {
     private final int interval = 35;
     final static int HEIGHT = 12;
     final static int WIDTH = 45;
-    private final String brickBreakSoundFile = "EXPLOSAO.wav";
+    private final String brickBreakSoundFile = "sound\\EXPLOSAO.wav";
     
     //The timer that controls the animation. Instantiated in constructor.
     Timer animationTimer;
@@ -69,13 +69,13 @@ public class Brick extends GameObject {
         g.setColor(color);
         String str;
         if (color.equals(Color.BLUE)) {
-            str = "brick_blue.gif";
+            str = "img\\brick_blue.gif";
         } else if (color.equals(Color.RED)) {
-            str = "brick_red.gif";
+            str = "img\\brick_red.gif";
         } else if (color.equals(Color.white)) {
-            str = "brick_white.png";
+            str = "img\\brick_white.png";
         } else {
-            str = "brick.gif";
+            str = "img\\brick.gif";
         }
         Picture.draw(g, str, x, y, WIDTH, HEIGHT, imageOn);
 
